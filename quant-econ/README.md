@@ -1,3 +1,0 @@
-julia
-====
-Julia Programming
