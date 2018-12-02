@@ -1,9 +1,9 @@
 function es(n::Int)
-  isprime = ones(Bool, n)
+  isprime = trues(n)  # n-element vector of true-s
   isprime[1] = false
-  for i in 2:round(Int, sqrt(n))
+  for i in 2:isqrt(n)
     if isprime[i]
-      for j in (i*i):i:n
+      for j in i^2:i:n
         isprime[j] = false
       end
     end
