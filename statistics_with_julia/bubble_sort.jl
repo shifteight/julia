@@ -12,3 +12,4 @@ end
 
 data = [65, 51, 32, 12, 23, 84, 68, 1]
 bubbleSort!(data)
+println(data)
