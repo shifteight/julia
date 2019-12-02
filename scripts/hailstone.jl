@@ -1,4 +1,4 @@
-using PyPlot
+using Plots
 
 function hailLength(x::Int)
     n = 0
@@ -15,7 +15,5 @@ end
 
 lengths = [hailLength(x0) for x0 in 2:10^7]
 
-plt[:hist](lengths, 1000, normed = "true")
-xlabel("Length")
-ylabel("Frequency")
-plt.show()
+p = histogram(lengths, normalize=true)
+plot(p)
